@@ -1,0 +1,13 @@
+#location-detail-link {
+  text-align: center;
+}
+
+hr.decorative-line {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+    border: 0;
+}
+
+.line-padding {
+  padding: 1%;
+}

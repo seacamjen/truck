@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<nav id="header" class="navbar sticky-top navbar-light bg-primary">
+  <a class="navbar-brand" style="color: black" routerLink="">Chow Down</a>
+  <!-- <a class="navbar-brand" style="color: black" routerLink="tickets">Tickets</a> -->
+  <a class="navbar-brand" style="color: black" routerLink="food-trucks">Food Trucks</a>
+  <!-- Get details on food truck -->
+  <a class="navbar-brand" style="color: black" routerLink="location">Locations</a>
+  <a class="navbar-brand" style="color: black" routerLink="vendor">Become Vendor</a>
+  <a class="navbar-brand" style="color: black" routerLink="about">Our Story</a>
+</nav>
+
+<br><br><br>
+<router-outlet></router-outlet>

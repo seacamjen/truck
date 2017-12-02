@@ -1,0 +1,94 @@
+<div class="row">
+  <div class="col-sm-3 line-padding">
+    <hr class="decorative-line">
+  </div>
+    <div class="col-sm-6">
+      <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h2 class="text-center">Locations</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 line-padding">
+    <hr class="decorative-line">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h3>
+      Location Location Location! Not every city has the best food! If you have the best food in the country let us know so we can bring together all of the food trucks from the area.
+    </h3>
+  </div>
+</div>
+
+<hr>
+
+<!-- <div *ngFor="let location of locations | slice:0:5" (click)="goToDetailPage(location)">
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-2">
+      <h4><em>{{location.location}}</em> <br>by {{location.date}}</h4>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-3 col-sm-offset-2">
+    <a type="button" name="button" class="btn btn-info">View all Locations</a>
+  </div>
+</div>
+<hr>
+
+<div class="row" style="height: 250px">
+  <div class="col-sm-10 col-sm-offset-1">
+    <h3 class="text-center">
+      $75 Early Bird Special ends tomorrow!
+    </h3>
+  </div>
+</div>
+
+<div class="row panel panel-default" id="location-detail-link">
+  <div *ngFor="let location of locations">
+    <div class="col-sm-4 location-info panel-body">
+        <h4><em>{{location.location}}</em> <br>by {{location.date}}</h4>
+      <button type="button" name="detail-page" class="btn btn-info" (click)="goToDetailPage(location)">Learn More</button>
+    </div>
+  </div>
+</div>
+<br>
+<hr> -->
+
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-4">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3>Pre Register</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <div>
+            <label>Name:</label>
+            <br>
+            <input  class="form-control" #newName>
+          </div>
+
+          <div>
+            <label>Email:</label>
+            <br>
+            <input class="form-control" #newEmail>
+          </div>
+
+          <div>
+            <label>Location:</label>
+            <br>
+            <input class="form-control" #newLocation>
+          </div>
+
+          <br>
+          <button class="btn btn-success pull-right" (click)="submitForm(newName.value, newEmail.value, newLocation.value); newName.value=''; newEmail.value=''; newLocation.value=''">Pre Register</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

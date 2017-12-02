@@ -1,0 +1,154 @@
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <div class="block">
+          <h1>Chow Down</h1>
+          <h1 class="animated fadeInUp">We want everyone to enjoy the best food, fastest lines, and greatest entertainment</h1>
+          <p class="animated fadeInUp">Try a variety of foods from around the area</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>Upcoming Events</h2>
+            <p>Our next event will be in your neighborhood; Bring the community together to enjoy food, entertainment and something new</p>
+          </div>
+          <p>Our events will be something that you have never been to before, unless you have been to this same event. The best food trucks from the area will gather to show that they have the best food around. Have you been to an event where you had to wait in line for the best food? Well we have solved this by having all of the best food and make the lines move faster! You can enjoy a great day with friends food and entertainment.  </p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <!-- <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="assets/food-salad-restaurant-person.jpg" alt="Img">
+        </div>
+      </div> -->
+      <!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
+
+<section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <h2>WE BELIEVE IN GREAT Vendors</h2>
+      <p>Do you have something unique that foodies will love? This could be the place for you to get the word out! To share something special with your own community members.</p>
+      <p>Do you want to have your own booth to display great products? Thousands of people will be at this event to view what you have. This could be the best opportunity to get your business to the next level.</p>
+      <p>If you want to advertise we do that too. We have many options for you to spread the word on whatever it might be. Take a look at our vendors page to see how you can be part of the next great event in your area!</p>
+      <a href="/vendor" class="btn btn-view-works">View Vendor Info</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Service Start -->
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>We bring all of the best ideas to one place: food, friends, and entertainment. We want to bring our best dishes together so everyone can enjoy them!</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="icon ion-coffee"></i>
+          <h4>Food Trucks</h4>
+          <p>The best food trucks and cooks around will make the best food you have ever eaten</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-compass"></i>
+          <h4>Small Bites</h4>
+          <p>We want to give the opportunity to try as much as possible. With smaller amounts of food you can try a greater variety!</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-image"></i>
+          <h4>Great Entertainment</h4>
+          <p>What goes best with food and friends? Some great entertainment. The best DJ's around with keep you dancing!</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-image"></i>
+          <h4>Fast Lines</h4>
+          <p>Are you tired of waiting in lines to get your favorite dish, we have designed a way to get you through a line faster!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call to action Start -->
+<!-- <section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- Content Start -->
+<!-- <section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Fun Facts About Us</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {% if site.data.funfacts.size > 0 %}
+        <div class="block">
+          {% for ff in site.data.funfacts %}
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="{{ ff.icon }}"></i>
+                <h4 class="counter">{{ ff.counter }}</h4>
+                <span>{{ ff.text }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      <div class="col-md-6">
+        {% if site.data.testimonials.size > 0 %}
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            {% for tm in site.data.testimonials %}
+            <div>
+                <img src="img/cotation.png" alt="IMG">
+                <p>{{ tm.testimonial }}</p>
+                <div class="user">
+                  <img src="{{ tm.image }}" alt="Pepole">
+                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section> -->
